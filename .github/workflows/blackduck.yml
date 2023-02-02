@@ -16,7 +16,7 @@ jobs:
   # This workflow contains a single job called "build"
   blackduck:
     # The type of runner that the job will run on
-    runs-on: [self-hosted]
+    runs-on: [ubuntu-latest]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -28,7 +28,7 @@ jobs:
         uses: synopsys-sig/synopsys-action@main
         with:
           # For demo purposes only
-          bridge_download_url: ${{ env.MACOSX_BRIDGE_URL }}
+          # bridge_download_url: ${{ env.MACOSX_BRIDGE_URL }}
 
           blackduck_url: ${{ secrets.BLACKDUCK_URL }}
           blackduck_apiToken: ${{ secrets.BLACKDUCK_TOKEN }}
@@ -42,7 +42,7 @@ jobs:
         uses: synopsys-sig/synopsys-action@main
         with:
           # For demo purposes only
-          bridge_download_url: ${{ env.MACOSX_BRIDGE_URL }}
+          # bridge_download_url: ${{ env.MACOSX_BRIDGE_URL }}
 
           blackduck_url: ${{ secrets.BLACKDUCK_URL }}
           blackduck_apiToken: ${{ secrets.BLACKDUCK_TOKEN }}
