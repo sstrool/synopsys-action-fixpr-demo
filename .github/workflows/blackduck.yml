@@ -45,7 +45,7 @@ jobs:
           # bridge_download_url: ${{ env.MACOSX_BRIDGE_URL }}
 
           blackduck_url: ${{ secrets.BLACKDUCK_URL }}
-          blackduck_apiToken: ${{ secrets.BLACKDUCK_TOKEN_PAT }}
+          blackduck_apiToken: ${{ secrets.BLACKDUCK_TOKEN }}
           blackduck_automation_fixpr: false
 
           github_token: ${{ secrets.GITHUB_TOKEN_PAT }}
